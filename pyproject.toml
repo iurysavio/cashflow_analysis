@@ -1,0 +1,20 @@
+[project]
+name = "cashflow-analysis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Iury Sávio", email = "iurysaviopinheiro@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.4.6",
+    "pandas>=3.1.0",
+]
+
+[project.scripts]
+cashflow-analysis = "cashflow_analysis:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
